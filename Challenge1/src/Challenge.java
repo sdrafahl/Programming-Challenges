@@ -30,12 +30,14 @@ public class Challenge {
 			list.clear();
 			if(isValid(firstIndex+1, lastIndex, A, hashSet)) {
 				firstIndex++;
+				front = true;
 			} else {
 				front = false;
 			}
 
 			if(isValid(firstIndex, lastIndex-1, A, hashSet)){
 				lastIndex--;
+				last = true;
 			} else {
 				last = false;
 			}
